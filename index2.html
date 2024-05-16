@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com?family=Roboto:wght@300;700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/ccbd4d6bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Start.css" />
+    <title>HL3</title>
+</head>
+<body>
+    <div class="screen">
+        <i class="fas fa-volume-mute fa-2x" id="sound"></i>
+        <video autoplay loop muted id="videoBackground">
+            <source src="molevideo.mp4" type="video/mp4"/>
+        </video>
+        <audio id="audioClick">
+            <source src="buttonclick.wav" type="audio/wav"/>
+        </audio>
+        <audio id="audioHover">
+            <source src="buttonrollover.mp3" type="audio/mpeg"/>
+        </audio>
+        <div class="menu">
+            <h1>Whack-A-Mole</h1>
+            <h3>Are you Ready</h3>
+            <ul>
+                <li><a href="#" onclick="startGame()">New Game</a></li>
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">Quit</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="Start.js"></script>
+    <script>
+        function startGame() {
+            // Change the path to your second HTML file
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

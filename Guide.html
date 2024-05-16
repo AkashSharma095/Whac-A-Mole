@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dynamic Images and Background</title>
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Create and append the first image
+        var image1 = document.createElement("img");
+        image1.src = "mole.jpg"; // Replace with the path to your first image
+        document.body.appendChild(image1);
+
+        // Create and append the second image
+        var image2 = document.createElement("img");
+        image2.src = "eater2.jpg"; // Replace with the path to your second image
+        document.body.appendChild(image2);
+
+        // Set the background image
+        document.body.style.backgroundImage = "url('background.jpg')"; // Replace with the path to your background image
+    </script>
+</body>
+</html>
